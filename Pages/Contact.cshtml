@@ -1,0 +1,22 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact Us</h1>
+<p>We'd love to hear from you. Reach out with questions, project inquiries, or just to say hello!</p>
+<form action="https://formsubmit.co/riley@theoryandpixel.com" method="POST">
+    <label for="name">Name:</label><br />
+    <input type="text" name="name" required><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" name="email" required><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea name="message" rows="5" required></textarea><br /><br />
+
+    <input type="hidden" name="_next" value="http:localhost:5182/Thank You" />
+
+    <button type="submit">Send</button>
+</form>
