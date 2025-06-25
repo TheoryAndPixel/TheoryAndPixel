@@ -1,24 +1,22 @@
 @page
 @model ContactModel
 @{
-    Layout = "_Layout";
     ViewData["Title"] = "Contact";
 }
 
-<div class="contact-form-container">
-<h2>Contact Us</h2>
+<div class="contact-section">
+<h1>Contact Us</h1>
 <p>We'd love to hear from you. Reach out with questions, project inquiries, or just to say hello!</p>
-<form action="https://formsubmit.co/riley@theoryandpixel.com" method="POST">
-    <label for="name">Name:</label><br />
-    <input type="text" name="name" required><br /><br />
+<form class="https://formsubmit.co/riley@theoryandpixel.com" method="POST">
+    <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text"> id="Name" name="Name" required />
+</div>
+    <label for="email">Email:</label>
+    <input id="email" name="email" type="email" />
 
-    <label for="email">Email:</label><br />
-    <input type="email" name="email" required><br /><br />
-
-    <label for="message">Message:</label><br />
-    <textarea name="message" rows="5" required></textarea><br /><br />
-
-    <input type="hidden" name="_next" value="http:localhost:5182/Thank You" />
+    <label for="message">Message:</label>
+    <textarea id="message" rname+message ows="5" required></textarea>
 
     <button type="submit">Send</button>
 </form>

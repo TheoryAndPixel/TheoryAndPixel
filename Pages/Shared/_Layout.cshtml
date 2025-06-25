@@ -1,53 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TheoryAndPixel</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/TheoryAndPixel.styles.css" asp-append-version="true" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@ViewData["Title"] - Theory & Pixel</title>
+
+<!-- Modern Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+<!-- Your custom stylesheet -->
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<!-- Favicon (optional) -->
+<link rel="icon" type="image/png" href="~/images/favicon.png" />
 </head>
-<body class="d-flex flex-column min-vh-100">
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container">
-                    <a class="navbar-brand" href="/">TheoryAndPixel</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item"><a class="nav-link text-dark" asp-page="/Index">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark" asp-page="/Contact">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark" asp-page="/Privacy">Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="~/images/TransparentLogoImages.PNG" alt="Theory & Pixel logo" class="logo-img" class="logo-img" />
+        <p class="tagline">Where ideas meet pixels.</p>
+    </div>
 
-        <div class="site-notice">
-            🚧 This website is still under development. In the meantime, you can still get in touch through the "Contact Us" page! 🚧
-        </div>
+<nav>
+<a asp-page="/Index">Home</a>
+<a asp-page="/Contact">Contact</a>
+<a asp-page="/Privacy">Privacy</a>
+</nav>
+</header>
 
-        <main class="=cmain-content-area flex-filll">
-            </div class="container">
-            @RenderBody()
-            </div>
-        </main>
+<div class="site-notice">
+🚧 This website is still under development. In the meantime, you can still get in touch through the "Contact Us" page! 🚧
+</div>
 
-        <footer class="mt-auto text-muted">
-            <div class="container text-muted">
-                <div class="footer-content">
-                &copy; 2025 - TheoryAndPixel - <a asp-page="/Privacy">Privacy</a>
-            </div>
-        </div>
-    </footer>
+<main>
+@RenderBody()
+</main>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+<footer>
+<p>© 2025 - TheoryAndPixel - <a asp-page="/Privacy">Privacy</a></p>
+</footer>
 </body>
 </html>

@@ -1,295 +1,162 @@
-/* General resets */
+/* RESET & BASE STYLES */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html, body {
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fafafa;
-  color: #333;
+height: 100%;
+font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #fafafa;
+color: #333;
+line-height: 1.7;
 }
 
-/* Flex layout wrapper */
-.site-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* LAYOUT */
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
 
-/* Main content area grows to fill space */
-.main-content-area {
-  flex-grow: 1;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-/* Navbar spacing */
-.navbar {
-  margin-bottom: 1rem;
-}
-
-/* Notice banner styling */
-.site-notice {
-  background-color: #fff3cd;
-  color: #856404;
-  padding: 1rem 2rem;
-  text-align: center;
-  font-size: 1rem;
-  border: 1px solid #ffeeba;
-  margin-bottom: 2rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.site-notice:hover {
-  background-color: #ffe191;
-  color: #654000;
-  transform: scale(1.01);
-}
-
-.main-content-area .container {
-  padding-left: 4rem;
-  padding-right: 2rem;
-  margin: 0 auto;
-}
-
+/* HEADER */
 header {
-  text-align: center;
-  margin-bottom: 2rem;
+background: #ffffff;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+padding: 1.25rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
-/* Footer styling */
-.footer {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-  padding: 1rem 0;
-  background-color: #f9f9f9;
-  flex-shrink: 0;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* Headings and typography */
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.tagline {
-  font-size: 1.25rem;
-  color: #666;
-  margin-bottom: 2.5rem;
-}
-
-/* Service section */
-.service {
-  margin-bottom: 3.5rem;
-}
-
-.service h2 {
-  font-size: 1.75rem;
-  color: #222;
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-
-.service p {
-  margin: 0 0 1.5rem 0;
-  max-width: 80ch;
-  line-height: 1.6;
-}
-
-/* Portfolio links */
-a.portfolio-link {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a.portfolio-link:hover {
-  text-decoration: underline;
-}
-
-/* Logo tweaks */
-.logo-link {
-  display: inline-block;
-  margin-right: 20px;
-  text-decoration: none;
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .logo-img {
-  max-width: 325px;
-  height: auto;
-  margin-bottom: 0.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+max-width: 325px;
+width: 100%;
+height: auto;
+margin-bottom: 1rem;
+}
+
+@media (max-width 600px) {
+    .logo-img {
+        max-width: 200px;
+    }
+}
+
+nav a {
+margin-left: 1.25rem;
+text-decoration: none;
+color: #333;
+font-weight: 600;
+font-size: 1rem;
+}
+
+nav a:hover {
+color: #db99f1;
+}
+
+/* NOTICE BANNER */
+.site-notice {
+background-color: #fff5cd;
+color: #856404;
+padding: 1rem 2rem;
+font-size: 0.95rem;
+border: 1px solid #ffeeba;
+text-align: center;
+}
+
+/* MAIN */
+main {
+flex-grow: 1;
+padding: 3rem 2rem;
+max-width: 960px;
+margin: auto;
+}
+
+.tagline {
+font-size: 1.25rem;
+font-style: italic;
+color: #666;
+text-align: center;
+margin-top: 0.5rem;
+}
+
+/* SERVICES */
+.services {
+margin-top: 3rem;
 }
 
 .service {
-  margin-bottom: 3rem;
+margin-bottom: 2.5rem;
 }
 
-footer .container {
-  display: flex;
-  justify-content: center;
+.service h2 {
+font-size: 1.5rem;
+color: #222;
+margin-bottom: 0.75rem;
 }
 
-.custom-container {
-  padding-left: 4rem;
-  padding-right: 2rem;
-  margin: 0 auto;
+.service p {
+color: #555;
+max-width: 700px;
 }
 
-.services-container {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  max-width: 680 px;
-  margin: 0 auto;
+/* FOOTER */
+footer {
+background: #f1f1f1;
+color: #777;
+font-size: 0.9rem;
+text-align: center;
+padding: 1.5rem 1rem;
 }
 
-.contact-form-container {
-
-    max-width: 500px;
-
-    margin: 3rem auto;
-
-    padding: 2rem;
-
-    background-color: #fff;
-
-    border-radius: 10px;
-
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: stretch;
-
-    font-family: 'Segoe UI', sans-serif;
-
+/* LINKS */
+a {
+color: #0077cc;
 }
 
-
-
-.contact-form-container h2 {
-
-    text-align: center;
-
-    margin-bottom: 1rem;
-
-    color: #333;
-
+a:hover {
+text-decoration: underline;
 }
 
-
-
-.contact-form-container p {
-
-    text-align: center;
-
-    color: #555;
-
-    margin-bottom: 2rem;
-
+/* BUTTONS (optional use) */
+button {
+background-color: #db99f1;
+color: white;
+border: none;
+padding: 0.6rem 1.2rem;
+border-radius: 5px;
+font-weight: bold;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
-
-
-.contact-form-container label {
-
-    font-weight: bold;
-
-    margin-top: 0.5rem;
-
-    color: #444;
-
+button:hover {
+background-color: #c987e6;
 }
 
-
-
-.contact-form-container input,
-
-.contact-form-container textarea {
-
-    padding: 0.6rem;
-
-    margin-top: 0.2rem;
-
-    margin-bottom: 1rem;
-
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
-
-    font-size: 1rem;
-
-    width: 100%;
-
-    box-sizing: border-box;
-
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+align-items: flex-start;
 }
 
-
-
-.contact-form-container button {
-
-    background-color: #db997f; /* match your brand pink */
-
-    color: white;
-
-    padding: 0.7rem;
-
-    border: none;
-
-    border-radius: 6px;
-
-    font-size: 1rem;
-
-    cursor: pointer;
-
-    transition: background-color 0.3s ease;
-
+nav a {
+margin: 0.5rem 0 0 0;
 }
 
-
-
-.contact-form-container button:hover {
-
-    background-color: #c9876f;
-
+main {
+padding: 2rem 1rem;
 }
-
-button[type="submit"] {
-
-  background-color: #e6b8ab; /* Match logo color */
-
-  color: white;
-
-  border: none;
-
-  padding: 8px 16px;
-
-  font-size: 1rem;
-
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  transition: background-color 0.2s ease;
-
-}
-
-
-
-button[type="submit"]:hover {
-
-  background-color: #d6a79a; /* Slightly darker on hover */
 }
