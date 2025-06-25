@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/net9.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/965f1c2c-5159-4907-9a5e-7af325c0f341/resourceGroups/appsvc_windows_northcentralus/providers/Microsoft.Web/sites/theoryandpixel-riley"
+}

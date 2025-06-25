@@ -1,0 +1,43 @@
+{
+ "routes": [
+    {
+        "route": "/",
+        "allowedRoles": ["anonymous"]
+     }
+
+  ],
+
+  "navigationFallback": {
+
+    "rewrite": "/index.html"
+
+  },
+
+  "responseOverrides": {
+
+    "404": {
+
+      "rewrite": "/index.html"
+
+    }
+
+  },
+
+  "globalHeaders": {
+
+    "X-Content-Type-Options": "nosniff"
+
+  },
+
+  "redirects": [
+
+    {
+
+      "route": "/",
+
+      "statusCode": 301,
+
+      "redirect": "https://www.theoryandpixel.com"
+    }
+  ]
+}

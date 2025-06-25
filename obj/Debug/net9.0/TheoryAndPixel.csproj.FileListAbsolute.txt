@@ -15,6 +15,7 @@
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.MvcApplicationPartsAssemblyInfo.cache
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.RazorAssemblyInfo.cache
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.RazorAssemblyInfo.cs
+/Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.sourcelink.json
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
@@ -93,4 +94,5 @@
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.pdb
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/TheoryAndPixel.genruntimeconfig.cache
 /Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/ref/TheoryAndPixel.dll
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/compressed/a4yqzvixfp-vau6cvmuds.gz
+/Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/compressed/a4yqzvixfp-f4g0faf2ut.gz
+/Users/rileyness/TheoryAndPixel/TheoryAndPixel/obj/Debug/net9.0/compressed/2ve9jq409k-imof6a2i32.gz

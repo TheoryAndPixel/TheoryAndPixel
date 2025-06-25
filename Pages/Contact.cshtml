@@ -1,10 +1,12 @@
 @page
 @model ContactModel
 @{
+    Layout = "_Layout";
     ViewData["Title"] = "Contact";
 }
 
-<h1>Contact Us</h1>
+<div class="contact-form-container">
+<h2>Contact Us</h2>
 <p>We'd love to hear from you. Reach out with questions, project inquiries, or just to say hello!</p>
 <form action="https://formsubmit.co/riley@theoryandpixel.com" method="POST">
     <label for="name">Name:</label><br />
@@ -20,3 +22,4 @@
 
     <button type="submit">Send</button>
 </form>
+</div>

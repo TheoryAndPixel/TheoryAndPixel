@@ -1,14 +1,21 @@
 ﻿@page
 @model TheoryAndPixel.Pages.IndexModel
 
-<main>
+@{
+    Layout = "_Layout";
+}
+
 <div class="content">
-    <header class="=hero">
-    <h1>Theory & Pixel</h1>
-    <p class="tagline">Where ideas meet pixels.</p>
+    <div class="custom-container">
+    <header class="=hero" style="text-align: center;">
+        <img src="/images/TransparentLogoimages.PNG" alt="Theory & Pixel logo" class="logo-img" />
+  
+        <p class="tagline">Where ideas meet pixels.</p>
     </header>
 
     <section class="services">
+        <div class="services-container">
+
         <div class="service">
             <h2>Digital Art</h2>
             <p>Custom digital illustrations: Everything from heartfelt portraits and serene landscapes to designs for special occassions and visual storytelling that brings memories to life. Meaningful artwork that makes perfect gifts or personal keepsakes. Each piece is drawn with intention and emotional depth - not just decoration, but connection.</p>
@@ -23,6 +30,7 @@
             <h2>Web Development</h2>
             <p>Websites built from scratch - not just pretty, but functional, fast, and fully you. Theory and Pixel designs and develops sites that showcase your work, your value, and your story.</p>
         </div>
+        </div>
     </section>
 </div>
-</main>
+
