@@ -16,6 +16,7 @@
 </head>
 <body>
 <header>
+
     <div class="site-header">
             <div class="logo-tagline">
                 <img src="~/images/TransparentLogoimages.PNG" class="logo-img" alt="Theory & Pixel logo" />
@@ -23,7 +24,7 @@
             </div>
 
         <div class="welcome-msg">
-                Welcome to Theory and Pixel – Custom digital art, design, and code built for connection.
+                Custom digital art, design, and code built for connection.
             </div>
 
             <nav class="nav-bar">
@@ -32,8 +33,13 @@
                 <a asp-page="/Privacy">Privacy</a>
             </nav>
 </header>
-
-<main>
+@if (ViewContext.RouteData.Values["page"]?.ToString()?.ToLowerInvariant() == "/index")
+{
+         <section class="site-notice">
+       🚧 This website is still under development. In the meantime, you can still get in touch through the "Contact Us" page! 🚧
+    </section>
+}
+<main class="main-content">
 @RenderBody()
 </main>
 
