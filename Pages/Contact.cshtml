@@ -1,23 +1,97 @@
 @page
-@model ContactModel
+@model TheoryAndPixel.Pages.ContactModel
 @{
-    ViewData["Title"] = "Contact";
+ViewData["Title"] = "Contact";
 }
 
-<div class="contact-section">
-<h1>Contact Us</h1>
-<p>We'd love to hear from you. Reach out with questions, project inquiries, or just to say hello!</p>
-<form class="https://formsubmit.co/riley@theoryandpixel.com" method="POST">
-    <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text"> id="Name" name="Name" required />
+<main>
+<div class="contact-form-wrapper">
+<h1>Get in Touch</h1>
+<p>Have a project in mind? I'd love to hear from you. Fill out the form below and I'll get back to you soon.</p>
+
+<form method="post">
+<div class="form-group">
+<label asp-for="Contact.Name">Name</label>
+<input asp-for="Contact.Name" class="form-control" />
+<span asp-validation-for="Contact.Name" class="text-danger"></span>
 </div>
-    <label for="email">Email:</label>
-    <input id="email" name="email" type="email" />
 
-    <label for="message">Message:</label>
-    <textarea id="message" rname+message ows="5" required></textarea>
+<div class="form-group">
+<label asp-for="Contact.Email">Email</label>
+<input asp-for="Contact.Email" class="form-control" />
+<span asp-validation-for="Contact.Email" class="text-danger"></span>
+</div>
 
-    <button type="submit">Send</button>
+<div class="form-group">
+<label asp-for="Contact.Message">Message</label>
+<textarea asp-for="Contact.Message" class="form-control" rows="5"></textarea>
+<span asp-validation-for="Contact.Message" class="text-danger"></span>
+</div>
+
+<button type="submit" class="contact-submit">Send Message</button>
 </form>
 </div>
+</main>
+
+<style>
+.contact-form-wrapper {
+max-width: 600px;
+margin: 0 auto;
+padding: 2rem;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+text-align: center;
+}
+
+.contact-form-wrapper h1 {
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper p {
+margin-bottom: 2rem;
+color: #555;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+text-align: left;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+
+.form-control {
+width: 100%;
+padding: 0.75rem;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-submit {
+background-color: #e9b9ae; /* Matches your logo’s light pink tone */
+color: white;
+padding: 0.75rem 2rem;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+background-color: #d29c93; /* Slightly deeper shade for hover */
+}
+
+@@media (max-width: 600px) {
+.contact-form-wrapper {
+padding: 1rem;
+}
+}
+</style>
