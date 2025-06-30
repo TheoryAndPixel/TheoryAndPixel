@@ -121,10 +121,16 @@ font-size: 0.85rem;
     background: transparent;
     width: max-content;
     position: absolute;
-    bottom: -2.5rem;
+    bottom: -2.5;
     right: 0;
 display: flex;
 gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .nav-bar {
+        bottom: -2.75rem;
+    }
 }
 
 .nav-bar a {
@@ -134,7 +140,7 @@ font-weight: 600;
 }
 
 .nav-bar a:hover {
-color: #db99f1;
+color: #e9b9ae;
 }
 
 /* WELCOME MESSAGE */
@@ -403,6 +409,23 @@ main {
     gap: 1rem;
 }
 }
+@media (max-width: 767px) {
+  .nav-bar {
+    position: absolute;
+    bottom: -2.5rem;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
 
 @media (max-width: 601px) {
     .site-notice {
@@ -454,7 +477,7 @@ html, body {
         top: auto !important;
     }
     .site-header {
-        position: static;
+        position: relative;
     }
     body {
         padding-top: 0 !important;
