@@ -420,7 +420,7 @@ main {
   .nav-bar {
     position: absolute;
     display: flex;
-    bottom: -3rem;
+    bottom: -2.5rem;
     right: 0;
     gap: 2rem;
   }
