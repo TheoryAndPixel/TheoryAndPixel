@@ -418,11 +418,11 @@ main {
 
 @media (min-width: 768px) {
   .nav-bar {
-    position: static;
+    position: absolute;
     display: flex;
-    justify-content: center;
+    bottom: -3rem;
+    right: 0;
     gap: 2rem;
-    margin-top: 1rem;
   }
 }
 
