@@ -1,7 +1,0 @@
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/TheoryAndPixel
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/appsettings.Development.json
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/appsettings.json
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/TheoryAndPixel.dll
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/TheoryAndPixel.deps.json
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/TheoryAndPixel.runtimeconfig.json
-/Users/rileyness/TheoryAndPixel/TheoryAndPixel/bin/Release/net9.0/publish/TheoryAndPixel.pdb
