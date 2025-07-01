@@ -60,7 +60,7 @@ align-items: center;
 .left {
     display: flex;
     align-items: center;
-    gap: 0.75;
+    gap: 0.75rem;
     padding-left: 0 !important;
     margin-left: 0 !important;
 }
@@ -121,7 +121,7 @@ font-size: 0.85rem;
     background: transparent;
     width: max-content;
     position: absolute;
-    bottom: -2.5;
+    bottom: -2.5rem;
     right: 0;
 display: flex;
 gap: 1rem;
@@ -170,7 +170,7 @@ width: 100vw;
 max-width: 90%;
 background-color: #fff3c4 !important;
 color: #333 !important;
-padding: 0.75 1rem !important;
+padding: 0.75rem 1rem !important;
 margin-top: 1rem;
 margin: 1rem auto;
 font-size: 1rem !important;
@@ -192,7 +192,7 @@ margin-left: auto;
 margin-right: auto;
 }
 .main-content {
-    margin-top: 0.25;
+    margin-top: 0.25rem;
 }
 
 /* SERVICES */
@@ -268,7 +268,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    height: 150 px;
+    height: 150px;
     padding-bottom: 0.5rem;
     text-align: center;
 }
@@ -295,7 +295,7 @@ header {
 
 main {
     margin-top: 0rem !important;
-    padding-top: 0,.5em !important;
+    padding-top: 0.5rem !important;
 }
 .main-content {
     margin-top: 0;
